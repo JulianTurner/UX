@@ -21,6 +21,7 @@ RUN apt-get update \
 		texlive-luatex \
 		biber \
 		xz-utils \
+		openssh-client \
 		python \
 		python-pygments \
 		--no-install-recommends \
