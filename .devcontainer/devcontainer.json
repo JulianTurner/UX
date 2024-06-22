@@ -27,6 +27,7 @@
 				"cSpell.enableFiletypes": [
 					"!jsonc"
 				],
+				"cSpell.language": "de",
 			}
 		}
 	},
