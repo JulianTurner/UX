@@ -17,12 +17,16 @@
 		"vscode": {
 			"extensions": [
 				"James-Yu.latex-workshop",
-				"MS-vsliveshare.vsliveshare"
+				"MS-vsliveshare.vsliveshare",
+                "streetsidesoftware.code-spell-checker-german",
 			],
 			"settings": {
 				"latex-workshop.latex.outDir": "./out",
 				"latex-workshop.synctex.afterBuild.enabled": true,
 				"latex-workshop.view.pdf.viewer": "tab",
+				"cSpell.enableFiletypes": [
+					"!jsonc"
+				],
 			}
 		}
 	},
