@@ -21,6 +21,7 @@
 *.sym
 *.synctex.gz
 *.toc
+*.pdf
 
 # IDEs
 .texpadtmp/
