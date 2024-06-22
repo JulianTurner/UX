@@ -51,5 +51,8 @@
                 "%DOCFILE%"
             ]
         }
+    ],
+    "cSpell.enableFiletypes": [
+        "latex"
     ]
 }
