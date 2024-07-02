@@ -352,8 +352,8 @@ mincrossrefs = 1
 %-----------------------------------
 % Tabellenverzeichnis
 %-----------------------------------
-\listoftables
-\newpage
+% \listoftables
+% \newpage
 %-----------------------------------
 % Abkürzungsverzeichnis
 %-----------------------------------
@@ -369,10 +369,10 @@ mincrossrefs = 1
 % In Overleaf führt der Einsatz des Symbolverzeichnisses zu einem Fehler, der aber ignoriert werdne kann
 % Falls das Symbolverzeichnis nicht im Inhaltsverzeichnis angezeigt werden soll
 % dann folgende Zeile auskommentieren.
-\phantomsection\addcontentsline{toc}{section}{\symheadingname}
-\input{skripte/symbolDef}
-\listofsymbols
-\newpage
+% \phantomsection\addcontentsline{toc}{section}{\symheadingname}
+% \input{skripte/symbolDef}
+% \listofsymbols
+% \newpage
 
 %-----------------------------------
 % Glossar
@@ -400,26 +400,26 @@ mincrossrefs = 1
 %-----------------------------------
 % Apendix / Anhang
 %-----------------------------------
-\newpage
-\section*{\AppendixName} %Überschrift "Anhang", ohne Nummerierung
-\addcontentsline{toc}{section}{\AppendixName} %Den Anhang ohne Nummer zum Inhaltsverzeichnis hinzufügen
+% \newpage
+% \section*{\AppendixName} %Überschrift "Anhang", ohne Nummerierung
+% \addcontentsline{toc}{section}{\AppendixName} %Den Anhang ohne Nummer zum Inhaltsverzeichnis hinzufügen
 
-\begin{appendices}
-% Nachfolgende Änderungen erfolgten aufgrund von Issue 163
-\makeatletter
-\renewcommand\@seccntformat[1]{\csname the#1\endcsname:\quad}
-\makeatother
-\addtocontents{toc}{\protect\setcounter{tocdepth}{0}} %
-	\renewcommand{\thesection}{\AppendixName\ \arabic{section}}
-	\renewcommand\thesubsection{\AppendixName\ \arabic{section}.\arabic{subsection}}
-	\input{kapitel/anhang/anhang}
-\end{appendices}
-\addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
+% \begin{appendices}
+% % Nachfolgende Änderungen erfolgten aufgrund von Issue 163
+% \makeatletter
+% \renewcommand\@seccntformat[1]{\csname the#1\endcsname:\quad}
+% \makeatother
+% \addtocontents{toc}{\protect\setcounter{tocdepth}{0}} %
+% 	\renewcommand{\thesection}{\AppendixName\ \arabic{section}}
+% 	\renewcommand\thesubsection{\AppendixName\ \arabic{section}.\arabic{subsection}}
+% 	\input{kapitel/anhang/anhang}
+% \end{appendices}
+% \addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
 
 %-----------------------------------
 % Literaturverzeichnis
 %-----------------------------------
-\newpage
+% \newpage
 
 % Die folgende Zeile trägt ALLE Werke aus literatur.bib in das
 % Literaturverzeichnis ein, egal ob sie zietiert wurden oder nicht.
@@ -456,17 +456,17 @@ mincrossrefs = 1
 % noch weitere Arten von Zusammenfassungen eines Literaturverzeichnisse zu
 % erzeugen.
 % Beispiel: [type=book,type=article]
-\printbibliography[nottype=online,heading=bibintoc,title={\langde{Literaturverzeichnis}\langen{Bibliography}}]
+% \printbibliography[nottype=online,heading=bibintoc,title={\langde{Literaturverzeichnis}\langen{Bibliography}}]
 
 % neue Seite für Internetquellen-Verzeichnis
-\newpage
+% \newpage
 
 % Laut Leitfaden 2018, S. 14, Fussnote 44 stehen die Internetquellen NICHT im
 % Inhaltsverzeichnis, sondern gehören zum Literaturverzeichnis.
 % Die Option heading=bibintoc würde die Internetquelle als eigenen Eintrag im
 % Inhaltsverzeicnis anzeigen.
 %\printbibliography[type=online,heading=bibintoc,title={\headingNameInternetSources}]
-\printbibliography[type=online,heading=subbibliography,title={\headingNameInternetSources}]
+% \printbibliography[type=online,heading=subbibliography,title={\headingNameInternetSources}]
 
-\input{kapitel/anhang/erklaerung}
+% \input{kapitel/anhang/erklaerung}
 \end{document}
