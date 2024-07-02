@@ -1,69 +1,43 @@
 \subsection{Festlegen der Benutzerbelange und der Erfordernisse}
 
-\textbf{Ziel:} Das Ziel dieses Schrittes ist es, die Benutzerbelange und Erfordernisse für ein \gls{browser}-Plugin zur Tab-Verwaltung mit einer Baumstruktur zu spezifizieren. Diese Anforderungen dienen als Grundlage für das Design und die Entwicklung des Plugins.
-\textbf{Benutzerbelange und Erfordernisse:}
+\textbf{Ziel:} 
+Das Ziel dieser Phase ist es, die spezifischen Anforderungen und Belange der Benutzer des \gls{browser}s zu definieren und zu dokumentieren. 
+Dies geschieht auf Basis der Erkenntnisse aus der Kontextanalyse und dient als Grundlage für die Entwicklung benutzerzentrierter Lösungen, wie in diesem Fall eine Erweiterung des \gls{browser}s zur Verwaltung von \gls{browser}-\gls{tab}s mit einer Baumstruktur.
 
-\begin{enumerate}
-    \item \textbf{Übersichtlichkeit und Organisation:}
-    \begin{itemize}
-        \item Nutzer müssen in der Lage sein, eine große Anzahl von Tabs effizient zu verwalten.
-        \item Eine Baumstruktur soll eine hierarchische Organisation der Tabs ermöglichen.
-        \item Tabs sollten einfach in der Baumstruktur verschoben, gruppiert und verschachtelt werden können.
-    \end{itemize}
-    
-    \item \textbf{Benutzerfreundlichkeit:}
-    \begin{itemize}
-        \item Das Plugin muss eine intuitive und leicht verständliche Benutzeroberfläche haben.
-        \item Drag-and-Drop-Funktionalität zum Verschieben und Organisieren von Tabs.
-        \item Schneller Zugriff auf häufig genutzte Funktionen und Einstellungen.
-    \end{itemize}
-    
-    \item \textbf{Leistungsfähigkeit:}
-    \begin{itemize}
-        \item Das Plugin soll auch bei einer großen Anzahl von Tabs flüssig und schnell arbeiten.
-        \item Minimale Auswirkungen auf die \gls{browser}leistung.
-    \end{itemize}
-    
-    \item \textbf{Such- und Filterfunktionen:}
-    \begin{itemize}
-        \item Möglichkeit, Tabs nach Titel, URL oder Inhalt zu durchsuchen.
-        \item Filteroptionen, um Tabs nach verschiedenen Kriterien zu sortieren (z.B. nach Erstellungsdatum, Domain).
-    \end{itemize}
-    
-    \item \textbf{Anpassbarkeit:}
-    \begin{itemize}
-        \item Nutzer sollen die Möglichkeit haben, das Erscheinungsbild und die Funktionen des Plugins an ihre Bedürfnisse anzupassen.
-        \item Unterstützung für verschiedene Themes und Layout-Optionen.
-    \end{itemize}
-    
-    \item \textbf{Synchronisation:}
-    \begin{itemize}
-        \item Möglichkeit zur Synchronisation der Tab-Baumstruktur über mehrere Geräte hinweg.
-    \end{itemize}
-\end{enumerate}
-
-\textbf{Methoden zur Ermittlung der Anforderungen:}
-
+\textbf{Anforderungsarten:}
 \begin{itemize}
-    \item \textbf{Benutzerbefragungen:} Durchführen von Umfragen und Interviews mit den Nutzern, um ihre spezifischen Bedürfnisse und Wünsche zu erfassen.
-    \item \textbf{Wettbewerbsanalyse:} Analyse bestehender Tab-Verwaltungs-Plugins, um deren Stärken und Schwächen zu identifizieren und daraus Anforderungen abzuleiten.
-    \item \textbf{Nutzungsszenarien und Use Cases:} Erstellen von detaillierten Nutzungsszenarien und Use Cases, um die verschiedenen Anwendungsfälle des Plugins zu dokumentieren.
-    \item \textbf{Prototyping und Benutzer-Feedback:} Entwicklung von Prototypen des Plugins und Einholen von Feedback der Nutzer, um die Anforderungen zu validieren und zu verfeinern.
+    \item \textbf{Funktionale Anforderungen:}
+    \begin{itemize}
+        \item \textbf{Effiziente Tab-Verwaltung:} Der \gls{browser} muss eine hierarchische Struktur zur Verwaltung von \gls{tab}s unterstützen. Diese Struktur soll es Benutzern wie Robert und Lena ermöglichen, alle Tabs zu einem bestimmten Thema zu gruppieren und bei Bedarf auf einmal zu schließen.
+        \item \textbf{Suchfunktion:} Der \gls{browser} muss eine schnelle und effiziente Suchfunktion bieten, die es ermöglicht, bestimmte \gls{tab}s schnell zu finden und zu öffnen.
+        \item \textbf{Tabs verschieben:} Benutzer müssen die Möglichkeit haben, \gls{tab}s innerhalb der hierarchischen Struktur einfach zu verschieben, um die Hierarchie an ihre Bedürfnisse anzupassen.
+        \item \textbf{Intuitive Benutzeroberfläche:} Die Oberfläche sollte leicht verständlich und benutzerfreundlich sein, um Benutzern wie Lena das Organisieren und Wiederfinden von \gls{tab}s zu erleichtern.
+    \end{itemize}
+    \item \textbf{Nicht-funktionale Anforderungen:}
+    \begin{itemize}
+        \item \textbf{Performance:} Der \gls{browser} muss eine hohe Performance bieten, um auch bei vielen geöffneten \gls{tab}s schnell zu bleiben. Die Erweiterung darf die Performance des \gls{browser}s nicht einschränken.
+        \item \textbf{Zuverlässigkeit:} Der \gls{browser} soll stabil laufen und nicht abstürzen, selbst bei intensiver Nutzung.
+        \item \textbf{Zugänglichkeit:} Die Funktionen des \gls{browser}s sollten auch für Nutzer mit speziellen Bedürfnissen zugänglich sein.
+    \end{itemize}
 \end{itemize}
 
-\textbf{Dokumentation der Anforderungen:}
+\textbf{Methoden zur Erhebung und Validierung der Anforderungen:}
+\begin{itemize}
+    \item \textbf{Workshops und Brainstorming-Sitzungen:} Durchführung von Sitzungen mit Stakeholdern und Nutzern, um die Anforderungen zu diskutieren und zu validieren.
+    \item \textbf{User Stories:} Erstellung von \gls{userStory}, um spezifische Nutzungsszenarien zu beschreiben.
+\end{itemize}
 
-Die Anforderungen werden in einem Anforderungsdokument festgehalten, das die Grundlage für das Design und die Entwicklung des Plugins bildet. Es wird regelmäßig überprüft und aktualisiert, um sicherzustellen, dass es den aktuellen Bedürfnissen der Nutzer entspricht.
+\textbf{Dokumentation:}
+Die definierten Anforderungen werden in einem Anforderungsdokument festgehalten, das für alle Projektbeteiligten zugänglich ist. 
+Dieses Dokument enthält detaillierte Beschreibungen der funktionalen und nicht-funktionalen Anforderungen sowie die \gls{userStory}.
 
-
-\textbf{Ziel:}
-
-% - Leistung im Bezug auf betriebliche & finanzielle Ziele
-% - Vorschriften & Gesetze
-% - Zusammenarbeit mit anderen Systemen
-% - Durchführbarkeit von Betrieb & Wartung (z.B. SLA, Alternativen)
-
-% - Verwenden des Wissens aus Ergonomie, Psychologie, ...
-% - Konkretisierung von Gestaltungslösungen mit Pseudoimplementierungen (z.B. Prototypen, Mockups)
-% - Wiederholung des Prozesses bis Zufriedenheit
-
+\textbf{Erstellte \gls{userStory}:}
+\begin{itemize}
+    \item \textbf{User Story 1:} Als Robert möchte ich eine effiziente Möglichkeit, über 100 \gls{tab}s zu verwalten, damit ich schnell die benötigten Informationen finde.
+    \item \textbf{User Story 2:} Als Lena möchte ich eine intuitive Benutzeroberfläche, die mir hilft, meine Recherchen zu organisieren und wiederzufinden.
+    \item \textbf{User Story 3:} Als Anton möchte ich eine leistungsstarke Suchfunktion, um spezifische \gls{tab}s schnell zu finden.
+    \item \textbf{User Story 4:} Als Benutzer möchte ich die Möglichkeit haben, \gls{tab}s innerhalb der hierarchischen Struktur zu verschieben, um meine \gls{tab}-Hierarchie flexibel anzupassen.
+    \item \textbf{User Story 5:} Als Robert oder Lena möchte ich die Möglichkeit haben, alle \gls{tab}s zu einem bestimmten Thema auf einmal zu schließen, um meine \gls{browser}-Sitzung effizient zu verwalten.
+    \item \textbf{User Story 6:} Als Anton möchte ich die Möglichkeit haben, schnell zwischen verschiedenen \gls{tab}s zu wechseln, um Informationen schnell zu vergleichen.
+    \item \textbf{User Story 7:} Als Benutzer möchte ich sicherstellen, dass die Performance des \gls{browser}s durch die Erweiterung nicht eingeschränkt wird, damit der \gls{browser} auch bei vielen geöffneten \gls{tab} schnell bleibt.
+\end{itemize}
